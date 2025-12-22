@@ -1,23 +1,29 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Domer 🚨</title>
 </head>
-<body style="padding:20px;">
-  <h1>Domer 🚨 (click on the baby)</h1>
+<body style="font-family: Arial; padding: 24px; text-align: center;">
+
+  <h1>Domer 🚨</h1>
+  <p>(click on the baby)</p>
 
   <img
     id="media"
-    src="media/GIF.gif"
+    src="GIF.gif"
+    alt="Click the baby"
     style="max-width:400px; cursor:pointer;"
   >
 
   <script>
     const img = document.getElementById("media");
+
     img.addEventListener("click", () => {
       img.src = "Wesley.png";
+      img.style.cursor = "default";
     }, { once: true });
   </script>
+
 </body>
 </html>
