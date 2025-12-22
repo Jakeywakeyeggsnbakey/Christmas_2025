@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Domer 🚨</title>
+</head>
+<body style="padding:20px;">
+  <h1>Domer 🚨 (click on the baby)</h1>
+
+  <img
+    id="media"
+    src="media/GIF.gif"
+    style="max-width:400px; cursor:pointer;"
+  >
+
+  <script>
+    const img = document.getElementById("media");
+    img.addEventListener("click", () => {
+      img.src = "Wesley.png";
+    }, { once: true });
+  </script>
+</body>
+</html>
